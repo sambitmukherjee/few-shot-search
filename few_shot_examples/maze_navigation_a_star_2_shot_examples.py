@@ -200,7 +200,7 @@ Estimated value = 0 + 10 = 10
 
 Pushing the `start` node, along with its estimated value into `heap`.
 
-Action: heap.push(key=20, value=10)
+Action: heap.push(20, 10)
 
 Observation:
 """
@@ -3436,7 +3436,7 @@ Estimated value = 0 + 8 = 8
 
 Pushing the `start` node, along with its estimated value into `heap`.
 
-Action: heap.push(key=81, value=8)
+Action: heap.push(81, 8)
 
 Observation:
 """
