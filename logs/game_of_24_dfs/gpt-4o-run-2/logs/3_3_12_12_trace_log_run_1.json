@@ -1,0 +1,70 @@
+{
+    "0": {
+        "state": null,
+        "thought": "3 + 3 = 6 (left: 6 12 12)\n3 * 3 = 9 (left: 9 12 12)\n12 / 3 = 4 (left: 3 4 12)\n12 - 3 = 9 (left: 3 9 12)\n12 + 3 = 15 (left: 3 12 15)\n12 * 3 = 36 (left: 3 12 36)",
+        "value": null,
+        "opening_remark": null,
+        "children": {
+            "0_0": {
+                "state": "3 + 3 = 6 (left: 6 12 12)",
+                "thought": null,
+                "value": 1.002,
+                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                "children": {},
+                "closing_remark": null,
+                "backtracked": false
+            },
+            "0_1": {
+                "state": "3 * 3 = 9 (left: 9 12 12)",
+                "thought": null,
+                "value": 0.003,
+                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                "children": {},
+                "closing_remark": null,
+                "backtracked": false
+            },
+            "0_2": {
+                "state": "12 / 3 = 4 (left: 3 4 12)",
+                "thought": "3 * 4 = 12 (left: 12 12)\n12 / 3 = 4 (left: 4 4)\n12 / 4 = 3 (left: 3 3)\n12 - 3 = 9 (left: 4 9)\n12 - 4 = 8 (left: 3 8)\n4 * 3 = 12 (left: 12 12)\n4 - 3 = 1 (left: 1 12)\n3 + 4 = 7 (left: 7 12)",
+                "value": 41.0,
+                "opening_remark": "Value does exceed heuristic threshold, childs will be traversed.",
+                "children": {
+                    "0_2_0": {
+                        "state": "12 / 3 = 4 (left: 3 4 12)\n3 * 4 = 12 (left: 12 12)",
+                        "thought": "12 + 12 = 24 (left: 24)\n12 - 12 = 0 (left: 0)\n12 * 12 = 144 (left: 144)\n12 / 12 = 1 (left: 1)",
+                        "value": 60.0,
+                        "opening_remark": "Value does exceed heuristic threshold, childs will be traversed.",
+                        "children": {
+                            "0_2_0_0": {
+                                "state": "12 / 3 = 4 (left: 3 4 12)\n3 * 4 = 12 (left: 12 12)\n12 + 12 = 24 (left: 24)",
+                                "thought": "Answer: (12 / 3) * 3 + 12 = 24",
+                                "value": 60.0,
+                                "opening_remark": "Value does exceed heuristic threshold, childs will be traversed.",
+                                "children": {
+                                    "0_2_0_0_0": {
+                                        "state": "12 / 3 = 4 (left: 3 4 12)\n3 * 4 = 12 (left: 12 12)\n12 + 12 = 24 (left: 24)\nAnswer: (12 / 3) * 3 + 12 = 24",
+                                        "thought": null,
+                                        "value": 60.0,
+                                        "opening_remark": "Value does exceed heuristic threshold, childs will be traversed.",
+                                        "children": {},
+                                        "closing_remark": null,
+                                        "backtracked": false
+                                    }
+                                },
+                                "closing_remark": null,
+                                "backtracked": false
+                            }
+                        },
+                        "closing_remark": null,
+                        "backtracked": false
+                    }
+                },
+                "closing_remark": null,
+                "backtracked": true,
+                "backtracked_to": "0"
+            }
+        },
+        "closing_remark": null,
+        "backtracked": false
+    }
+}

@@ -1,0 +1,355 @@
+{
+    "0": {
+        "state": null,
+        "thought": "2 + 4 = 6 (left: 6 8 11)\n4 - 2 = 2 (left: 2 8 11)\n8 - 2 = 6 (left: 4 6 11)\n11 - 2 = 9 (left: 4 8 9)\n2 * 4 = 8 (left: 8 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)\n8 / 2 = 4 (left: 4 4 11)\n4 * 2 = 8 (left: 8 8 11)\n11 - 4 = 7 (left: 2 7 8)\n8 * 2 = 16 (left: 4 11 16)\n4 * 4 = 16 (left: 2 11 16)\n11 + 2 = 13 (left: 4 8 13)\n11 + 4 = 15 (left: 2 8 15)",
+        "value": null,
+        "opening_remark": null,
+        "children": {
+            "0_0": {
+                "state": "2 + 4 = 6 (left: 6 8 11)",
+                "thought": "6 + 8 = 14 (left: 11 14)\n8 - 6 = 2 (left: 2 11)\n11 - 6 = 5 (left: 5 8)\n11 - 8 = 3 (left: 3 6)\n6 * 8 = 48 (left: 11 48)\n11 / 6 = 1.833 (left: 1.833 8)\n8 / 6 = 1.333 (left: 1.333 11)",
+                "value": 3.0,
+                "opening_remark": "Value does exceed heuristic threshold, childs will be traversed.",
+                "children": {
+                    "0_0_0": {
+                        "state": "2 + 4 = 6 (left: 6 8 11)\n6 + 8 = 14 (left: 11 14)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_0_1": {
+                        "state": "2 + 4 = 6 (left: 6 8 11)\n8 - 6 = 2 (left: 2 11)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_0_2": {
+                        "state": "2 + 4 = 6 (left: 6 8 11)\n11 - 6 = 5 (left: 5 8)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_0_3": {
+                        "state": "2 + 4 = 6 (left: 6 8 11)\n11 - 8 = 3 (left: 3 6)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_0_4": {
+                        "state": "2 + 4 = 6 (left: 6 8 11)\n6 * 8 = 48 (left: 11 48)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_0_5": {
+                        "state": "2 + 4 = 6 (left: 6 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)",
+                        "thought": "4 + 5.5 = 9.5 (left: 8 9.5)\n5.5 - 4 = 1.5 (left: 1.5 8)\n8 - 4 = 4 (left: 4 5.5)\n8 - 5.5 = 2.5 (left: 2.5 4)\n4 * 5.5 = 22 (left: 8 22)\n8 / 4 = 2 (left: 2 5.5)\n5.5 / 4 = 1.375 (left: 1.375 8)\n8 / 5.5 = 1.4545 (left: 1.4545 4)",
+                        "value": 3.0,
+                        "opening_remark": "Value does exceed heuristic threshold, childs will be traversed.",
+                        "children": {
+                            "0_0_5_0": {
+                                "state": "2 + 4 = 6 (left: 6 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)\n4 + 5.5 = 9.5 (left: 8 9.5)",
+                                "thought": null,
+                                "value": 0.003,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_0_5_1": {
+                                "state": "2 + 4 = 6 (left: 6 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)\n5.5 - 4 = 1.5 (left: 1.5 8)",
+                                "thought": null,
+                                "value": 1.002,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_0_5_2": {
+                                "state": "2 + 4 = 6 (left: 6 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)\n8 - 4 = 4 (left: 4 5.5)",
+                                "thought": null,
+                                "value": 1.002,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_0_5_3": {
+                                "state": "2 + 4 = 6 (left: 6 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)\n8 - 5.5 = 2.5 (left: 2.5 4)",
+                                "thought": null,
+                                "value": 0.003,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_0_5_4": {
+                                "state": "2 + 4 = 6 (left: 6 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)\n4 * 5.5 = 22 (left: 8 22)",
+                                "thought": null,
+                                "value": 0.003,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_0_5_5": {
+                                "state": "2 + 4 = 6 (left: 6 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)\n8 / 4 = 2 (left: 2 5.5)",
+                                "thought": null,
+                                "value": 0.003,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_0_5_6": {
+                                "state": "2 + 4 = 6 (left: 6 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)\n5.5 / 4 = 1.375 (left: 1.375 8)",
+                                "thought": null,
+                                "value": 0.003,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_0_5_7": {
+                                "state": "2 + 4 = 6 (left: 6 8 11)\n11 / 2 = 5.5 (left: 4 5.5 8)\n8 / 5.5 = 1.4545 (left: 1.4545 4)",
+                                "thought": null,
+                                "value": 0.003,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            }
+                        },
+                        "closing_remark": null,
+                        "backtracked": false,
+                        "backtracked_to": "0_0"
+                    }
+                },
+                "closing_remark": null,
+                "backtracked": false,
+                "backtracked_to": "None"
+            },
+            "0_1": {
+                "state": "4 - 2 = 2 (left: 2 8 11)",
+                "thought": "2 + 8 = 10 (left: 10 11)\n8 - 2 = 6 (left: 6 11)\n11 - 8 = 3 (left: 2 3)\n11 - 2 = 9 (left: 8 9)\n2 * 8 = 16 (left: 11 16)\n11 / 2 = 5.5 (left: 5.5 8)",
+                "value": 0.003,
+                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                "children": {
+                    "0_1_0": {
+                        "state": "4 - 2 = 2 (left: 2 8 11)\n2 + 8 = 10 (left: 10 11)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_1_1": {
+                        "state": "4 - 2 = 2 (left: 2 8 11)\n8 - 2 = 6 (left: 6 11)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_1_2": {
+                        "state": "4 - 2 = 2 (left: 2 8 11)\n11 - 8 = 3 (left: 2 3)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_1_3": {
+                        "state": "4 - 2 = 2 (left: 2 8 11)\n11 - 6 = 5 (left: 4 5)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_1_4": {
+                        "state": "4 - 2 = 2 (left: 2 8 11)\n4 * 6 = 24 (left: 11 24)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_1_5": {
+                        "state": "4 - 2 = 2 (left: 2 8 11)\n11 / 2 = 5.5 (left: 5.5 8)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_1_6": {
+                        "state": "4 - 2 = 2 (left: 2 8 11)\n11 / 4 = 2.75 (left: 2.75 6)",
+                        "thought": null,
+                        "value": 1.002,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_1_7": {
+                        "state": "4 - 2 = 2 (left: 2 8 11)\n11 * 4 = 44 (left: 6 44)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    }
+                },
+                "closing_remark": null,
+                "backtracked": false,
+                "backtracked_to": "0_0"
+            },
+            "0_2": {
+                "state": "8 - 2 = 6 (left: 4 6 11)",
+                "thought": "4 + 6 = 10 (left: 10 11)\n6 - 4 = 2 (left: 2 11)\n11 - 4 = 7 (left: 6 7)\n11 - 6 = 5 (left: 4 5)\n11 / 4 = 2.75 (left: 2.75 6)\n4 * 6 = 24 (left: 11 24) \n6 * 11 = 66 (left: 4 66)\n4 * 11 = 44 (left: 6 44)",
+                "value": 2.001,
+                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                "children": {
+                    "0_2_0": {
+                        "state": "8 - 2 = 6 (left: 4 6 11)\n4 + 6 = 10 (left: 10 11)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_2_1": {
+                        "state": "8 - 2 = 6 (left: 4 6 11)\n6 - 4 = 2 (left: 2 11)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_2_2": {
+                        "state": "8 - 2 = 6 (left: 4 6 11)\n11 - 4 = 7 (left: 6 7)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_2_3": {
+                        "state": "8 - 2 = 6 (left: 4 6 11)\n11 - 6 = 5 (left: 4 5)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_2_4": {
+                        "state": "8 - 2 = 6 (left: 4 6 11)\n4 * 6 = 24 (left: 11 24)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_2_5": {
+                        "state": "8 - 2 = 6 (left: 4 6 11)\n6 * 11 = 66 (left: 4 66)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    },
+                    "0_2_6": {
+                        "state": "8 - 2 = 6 (left: 4 6 11)\n11 / 4 = 2.75 (left: 2.75 6)",
+                        "thought": "2.75 + 6 = 8.75 (left: 8.75)\n6 - 2.75 = 3.25 (left: 3.25)\n2.75 * 6 = 16.5 (left: 16.5)\n6 / 2.75 \u2248 2.18 (left: 2.18)",
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {
+                            "0_2_6_0": {
+                                "state": "8 - 2 = 6 (left: 4 6 11)\n11 / 4 = 2.75 (left: 2.75 6)\n2.75 + 6 = 8.75 (left: 8.75)",
+                                "thought": null,
+                                "value": 0.003,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_2_6_1": {
+                                "state": "8 - 2 = 6 (left: 4 6 11)\n11 / 4 = 2.75 (left: 2.75 6)\n6 - 2.75 = 3.25 (left: 3.25)",
+                                "thought": null,
+                                "value": 1.002,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_2_6_2": {
+                                "state": "8 - 2 = 6 (left: 4 6 11)\n11 / 4 = 2.75 (left: 2.75 6)\n2.75 * 6 = 16.5 (left: 16.5)",
+                                "thought": null,
+                                "value": 0.003,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            },
+                            "0_2_6_3": {
+                                "state": "8 - 2 = 6 (left: 4 6 11)\n11 / 4 = 2.75 (left: 2.75 6)\n6 / 2.75 \u2248 2.18 (left: 2.18)",
+                                "thought": null,
+                                "value": 0.002,
+                                "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                                "children": {},
+                                "closing_remark": null,
+                                "backtracked": false
+                            }
+                        },
+                        "closing_remark": null,
+                        "backtracked": false,
+                        "backtracked_to": "0_2"
+                    },
+                    "0_2_7": {
+                        "state": "8 - 2 = 6 (left: 4 6 11)\n11 / 6 = 1.8333 (left: 4 1.8333)",
+                        "thought": null,
+                        "value": 0.003,
+                        "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+                        "children": {},
+                        "closing_remark": null,
+                        "backtracked": false
+                    }
+                },
+                "closing_remark": null,
+                "backtracked": false,
+                "backtracked_to": "0_0"
+            }
+        },
+        "closing_remark": null,
+        "backtracked": false
+    }
+}
