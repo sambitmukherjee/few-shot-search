@@ -1,0 +1,1267 @@
+{
+  "summary": {
+    "total_checks": 33,
+    "passed": 33,
+    "failed": 0
+  },
+  "checks_by_type": {
+    "pruning": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "pruning",
+          "node_id": "0_0",
+          "result": "PASS",
+          "reason": "Value 1.002 meets threshold 3.0",
+          "timestamp": "2025-05-29T22:03:34.891106",
+          "event_type": "validation",
+          "details": {
+            "value": 1.002,
+            "threshold": 3.0
+          }
+        },
+        {
+          "check_name": "pruning",
+          "node_id": "0_1",
+          "result": "PASS",
+          "reason": "Value 0.003 meets threshold 3.0",
+          "timestamp": "2025-05-29T22:03:42.896114",
+          "event_type": "validation",
+          "details": {
+            "value": 0.003,
+            "threshold": 3.0
+          }
+        }
+      ]
+    },
+    "child_id_assignment": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "child_id_assignment",
+          "node_id": "0_0",
+          "result": "PASS",
+          "reason": "node_id 0_0 matches thought position.",
+          "timestamp": "2025-05-29T22:03:34.891162",
+          "event_type": "validation",
+          "details": {
+            "node_id": "0_0",
+            "state": "3 + 5 = 8 (left: 8 11 11)",
+            "thoughts": [
+              "3 + 5 = 8 (left: 8 11 11)",
+              "5 + 3 = 8 (left: 8 11 11)",
+              "11 - 3 = 8 (left: 5 8 11)",
+              "11 - 5 = 6 (left: 3 6 11)",
+              "11 /  3 = 3.67 (left: 3.67 5 11)",
+              "11 /  5 = 2.2 (left: 2.2 3 11)",
+              "5 * 3 = 15 (left: 11 11 15)",
+              "3 * 5 = 15 (left: 11 11 15)",
+              "11 + 3 = 14 (left: 5 11 14)",
+              "11 + 5 = 16 (left: 3 11 16)"
+            ]
+          }
+        },
+        {
+          "check_name": "child_id_assignment",
+          "node_id": "0_1",
+          "result": "PASS",
+          "reason": "node_id 0_1 matches thought position.",
+          "timestamp": "2025-05-29T22:03:42.896169",
+          "event_type": "validation",
+          "details": {
+            "node_id": "0_1",
+            "state": "5 + 3 = 8 (left: 8 11 11)",
+            "thoughts": [
+              "3 + 5 = 8 (left: 8 11 11)",
+              "5 + 3 = 8 (left: 8 11 11)",
+              "11 - 3 = 8 (left: 5 8 11)",
+              "11 - 5 = 6 (left: 3 6 11)",
+              "11 /  3 = 3.67 (left: 3.67 5 11)",
+              "11 /  5 = 2.2 (left: 2.2 3 11)",
+              "5 * 3 = 15 (left: 11 11 15)",
+              "3 * 5 = 15 (left: 11 11 15)",
+              "11 + 3 = 14 (left: 5 11 14)",
+              "11 + 5 = 16 (left: 3 11 16)"
+            ]
+          }
+        },
+        {
+          "check_name": "child_id_assignment",
+          "node_id": "0_2",
+          "result": "PASS",
+          "reason": "node_id 0_2 matches thought position.",
+          "timestamp": "2025-05-29T22:03:48.374988",
+          "event_type": "validation",
+          "details": {
+            "node_id": "0_2",
+            "state": "11 - 3 = 8 (left: 5 8 11)",
+            "thoughts": [
+              "3 + 5 = 8 (left: 8 11 11)",
+              "5 + 3 = 8 (left: 8 11 11)",
+              "11 - 3 = 8 (left: 5 8 11)",
+              "11 - 5 = 6 (left: 3 6 11)",
+              "11 /  3 = 3.67 (left: 3.67 5 11)",
+              "11 /  5 = 2.2 (left: 2.2 3 11)",
+              "5 * 3 = 15 (left: 11 11 15)",
+              "3 * 5 = 15 (left: 11 11 15)",
+              "11 + 3 = 14 (left: 5 11 14)",
+              "11 + 5 = 16 (left: 3 11 16)"
+            ]
+          }
+        },
+        {
+          "check_name": "child_id_assignment",
+          "node_id": "0_2_0",
+          "result": "PASS",
+          "reason": "node_id 0_2_0 matches thought position.",
+          "timestamp": "2025-05-29T22:04:02.596495",
+          "event_type": "validation",
+          "details": {
+            "node_id": "0_2_0",
+            "state": "5 + 8 = 13 (left: 11 13)",
+            "thoughts": [
+              "5 + 8 = 13 (left: 11 13)",
+              "8 - 5 = 3 (left: 3 11)",
+              "11 - 5 = 6 (left: 6 8)",
+              "11 - 8 = 3 (left: 3 5)",
+              "5 * 8 = 40 (left: 11 40)",
+              "11 + 5 = 16 (left: 8 16)",
+              "8 * 5 = 40 (left: 11 40)",
+              "11 / 5 = 2.2 (left: 2.2 8)",
+              "8 / 5 = 1.6 (left: 1.6 11)"
+            ]
+          }
+        },
+        {
+          "check_name": "child_id_assignment",
+          "node_id": "0_2_0_0",
+          "result": "PASS",
+          "reason": "node_id 0_2_0_0 matches thought position.",
+          "timestamp": "2025-05-29T22:04:16.538752",
+          "event_type": "validation",
+          "details": {
+            "node_id": "0_2_0_0",
+            "state": "11 + 13 = 24 (left: 24)",
+            "thoughts": [
+              "11 + 13 = 24 (left: 24)",
+              "13 - 11 = 2 (left: 2)",
+              "11 * 13 = 143 (left: 143)",
+              "13 / 11 = 1.18 (left: 1.18)"
+            ]
+          }
+        },
+        {
+          "check_name": "child_id_assignment",
+          "node_id": "0_2_0_0_0",
+          "result": "PASS",
+          "reason": "node_id 0_2_0_0_0 matches thought position.",
+          "timestamp": "2025-05-29T22:04:30.898212",
+          "event_type": "validation",
+          "details": {
+            "node_id": "0_2_0_0_0",
+            "state": "Answer: (11 - 3) + 5 + 11 = 24",
+            "thoughts": [
+              "Answer: (11 - 3) + 5 + 11 = 24"
+            ]
+          }
+        }
+      ]
+    },
+    "pseudo_recursive_call": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "pseudo_recursive_call",
+          "node_id": "0_2",
+          "result": "PASS",
+          "reason": "Value 60.0 more than or equal to threshold 3.0",
+          "timestamp": "2025-05-29T22:03:48.374886",
+          "event_type": "validation",
+          "details": {
+            "value": 60.0,
+            "threshold": 3.0
+          }
+        },
+        {
+          "check_name": "pseudo_recursive_call",
+          "node_id": "0_2_0",
+          "result": "PASS",
+          "reason": "Value 60.0 more than or equal to threshold 3.0",
+          "timestamp": "2025-05-29T22:04:02.596406",
+          "event_type": "validation",
+          "details": {
+            "value": 60.0,
+            "threshold": 3.0
+          }
+        },
+        {
+          "check_name": "pseudo_recursive_call",
+          "node_id": "0_2_0_0",
+          "result": "PASS",
+          "reason": "Value 60.0 more than or equal to threshold 3.0",
+          "timestamp": "2025-05-29T22:04:16.538670",
+          "event_type": "validation",
+          "details": {
+            "value": 60.0,
+            "threshold": 3.0
+          }
+        }
+      ]
+    },
+    "child_state": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "child_state",
+          "node_id": "0_2",
+          "result": "PASS",
+          "reason": "State validation passed: Last thought '11 - 3 = 8 (left: 5 8 11)' found in parent's thoughts",
+          "timestamp": "2025-05-29T22:03:48.374947",
+          "event_type": "validation",
+          "details": {
+            "validation_success": [
+              "Last thought '11 - 3 = 8 (left: 5 8 11)' found in parent's thoughts"
+            ],
+            "parent_thoughts": [
+              "3 + 5 = 8 (left: 8 11 11)",
+              "5 + 3 = 8 (left: 8 11 11)",
+              "11 - 3 = 8 (left: 5 8 11)",
+              "11 - 5 = 6 (left: 3 6 11)",
+              "11 /  3 = 3.67 (left: 3.67 5 11)",
+              "11 /  5 = 2.2 (left: 2.2 3 11)",
+              "5 * 3 = 15 (left: 11 11 15)",
+              "3 * 5 = 15 (left: 11 11 15)",
+              "11 + 3 = 14 (left: 5 11 14)",
+              "11 + 5 = 16 (left: 3 11 16)"
+            ],
+            "parent_state": null
+          }
+        },
+        {
+          "check_name": "child_state",
+          "node_id": "0_2_0",
+          "result": "PASS",
+          "reason": "State validation passed: Last thought '5 + 8 = 13 (left: 11 13)' found in parent's thoughts; Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state",
+          "timestamp": "2025-05-29T22:04:02.596452",
+          "event_type": "validation",
+          "details": {
+            "validation_success": [
+              "Last thought '5 + 8 = 13 (left: 11 13)' found in parent's thoughts",
+              "Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state"
+            ],
+            "parent_thoughts": [
+              "5 + 8 = 13 (left: 11 13)",
+              "8 - 5 = 3 (left: 3 11)",
+              "11 - 5 = 6 (left: 6 8)",
+              "11 - 8 = 3 (left: 3 5)",
+              "5 * 8 = 40 (left: 11 40)",
+              "11 + 5 = 16 (left: 8 16)",
+              "8 * 5 = 40 (left: 11 40)",
+              "11 / 5 = 2.2 (left: 2.2 8)",
+              "8 / 5 = 1.6 (left: 1.6 11)"
+            ],
+            "parent_state": [
+              "11 - 3 = 8 (left: 5 8 11)"
+            ]
+          }
+        },
+        {
+          "check_name": "child_state",
+          "node_id": "0_2_0_0",
+          "result": "PASS",
+          "reason": "State validation passed: Last thought '11 + 13 = 24 (left: 24)' found in parent's thoughts; Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state; Previous thought '5 + 8 = 13 (left: 11 13)' found in parent's state",
+          "timestamp": "2025-05-29T22:04:16.538719",
+          "event_type": "validation",
+          "details": {
+            "validation_success": [
+              "Last thought '11 + 13 = 24 (left: 24)' found in parent's thoughts",
+              "Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state",
+              "Previous thought '5 + 8 = 13 (left: 11 13)' found in parent's state"
+            ],
+            "parent_thoughts": [
+              "11 + 13 = 24 (left: 24)",
+              "13 - 11 = 2 (left: 2)",
+              "11 * 13 = 143 (left: 143)",
+              "13 / 11 = 1.18 (left: 1.18)"
+            ],
+            "parent_state": [
+              "11 - 3 = 8 (left: 5 8 11)",
+              "5 + 8 = 13 (left: 11 13)"
+            ]
+          }
+        }
+      ]
+    },
+    "node_state": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "node_state",
+          "node_id": "0_2",
+          "result": "PASS",
+          "reason": "State consistency check passed",
+          "timestamp": "2025-05-29T22:03:55.333134",
+          "event_type": "validation",
+          "details": {
+            "expected_state": "11 - 3 = 8 (left: 5 8 11)",
+            "actual_state": "11 - 3 = 8 (left: 5 8 11)"
+          }
+        },
+        {
+          "check_name": "node_state",
+          "node_id": "0_2_0",
+          "result": "PASS",
+          "reason": "State consistency check passed",
+          "timestamp": "2025-05-29T22:04:10.222844",
+          "event_type": "validation",
+          "details": {
+            "expected_state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)",
+            "actual_state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)"
+          }
+        },
+        {
+          "check_name": "node_state",
+          "node_id": "0_2_0_0",
+          "result": "PASS",
+          "reason": "State consistency check passed",
+          "timestamp": "2025-05-29T22:04:24.068918",
+          "event_type": "validation",
+          "details": {
+            "expected_state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)\n11 + 13 = 24 (left: 24)",
+            "actual_state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)\n11 + 13 = 24 (left: 24)"
+          }
+        }
+      ]
+    },
+    "backtracking_I": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "backtracking_I",
+          "node_id": "0_2_0_0",
+          "result": "PASS",
+          "reason": "Complete backtracking validation passed: Correctly popped expected node 0_2_0_0; Correctly backtracking to parent '0_2_0'",
+          "timestamp": "2025-05-29T22:04:34.663838",
+          "event_type": "validation",
+          "details": {
+            "popped_node": "0_2_0_0",
+            "expected_popped": "0_2_0_0",
+            "backtrack_to": "0_2_0",
+            "expected_parent": "0_2_0",
+            "validation_details": [
+              "Correctly popped expected node 0_2_0_0",
+              "Correctly backtracking to parent '0_2_0'"
+            ]
+          }
+        },
+        {
+          "check_name": "backtracking_I",
+          "node_id": "0_2_0",
+          "result": "PASS",
+          "reason": "Complete backtracking validation passed: Correctly popped expected node 0_2_0; Correctly backtracking to parent '0_2'",
+          "timestamp": "2025-05-29T22:04:36.890573",
+          "event_type": "validation",
+          "details": {
+            "popped_node": "0_2_0",
+            "expected_popped": "0_2_0",
+            "backtrack_to": "0_2",
+            "expected_parent": "0_2",
+            "validation_details": [
+              "Correctly popped expected node 0_2_0",
+              "Correctly backtracking to parent '0_2'"
+            ]
+          }
+        },
+        {
+          "check_name": "backtracking_I",
+          "node_id": "0_2",
+          "result": "PASS",
+          "reason": "Complete backtracking validation passed: Correctly popped expected node 0_2; Correctly backtracking to parent '0'",
+          "timestamp": "2025-05-29T22:04:39.060910",
+          "event_type": "validation",
+          "details": {
+            "popped_node": "0_2",
+            "expected_popped": "0_2",
+            "backtrack_to": "0",
+            "expected_parent": "0",
+            "validation_details": [
+              "Correctly popped expected node 0_2",
+              "Correctly backtracking to parent '0'"
+            ]
+          }
+        },
+        {
+          "check_name": "backtracking_I",
+          "node_id": "0",
+          "result": "PASS",
+          "reason": "Complete backtracking validation passed: Correctly popped expected node 0; Correctly backtracking to parent 'None'",
+          "timestamp": "2025-05-29T22:04:40.980860",
+          "event_type": "validation",
+          "details": {
+            "popped_node": "0",
+            "expected_popped": "0",
+            "backtrack_to": "None",
+            "expected_parent": "None",
+            "validation_details": [
+              "Correctly popped expected node 0",
+              "Correctly backtracking to parent 'None'"
+            ]
+          }
+        }
+      ]
+    },
+    "base_case": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "base_case",
+          "node_id": "0_2_0_0",
+          "result": "PASS",
+          "reason": "Level limit 3 exceeded - valid backtrack",
+          "timestamp": "2025-05-29T22:04:34.663863",
+          "event_type": "validation",
+          "details": {
+            "stack_size": 3,
+            "level_limit": 3
+          }
+        }
+      ]
+    },
+    "backtracking_II": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "backtracking_II",
+          "node_id": "0_2_0_0",
+          "result": "PASS",
+          "reason": "Correct True flag used in True backtrack mode",
+          "timestamp": "2025-05-29T22:04:34.663869",
+          "event_type": "validation",
+          "details": {
+            "flag": "True",
+            "true_backtrack_mode": true
+          }
+        },
+        {
+          "check_name": "backtracking_II",
+          "node_id": "0_2_0",
+          "result": "PASS",
+          "reason": "Correct True flag used in True backtrack mode",
+          "timestamp": "2025-05-29T22:04:36.890594",
+          "event_type": "validation",
+          "details": {
+            "flag": "True",
+            "true_backtrack_mode": true
+          }
+        },
+        {
+          "check_name": "backtracking_II",
+          "node_id": "0_2",
+          "result": "PASS",
+          "reason": "Correct True flag used in True backtrack mode",
+          "timestamp": "2025-05-29T22:04:39.061005",
+          "event_type": "validation",
+          "details": {
+            "flag": "True",
+            "true_backtrack_mode": true
+          }
+        },
+        {
+          "check_name": "backtracking_II",
+          "node_id": "0",
+          "result": "PASS",
+          "reason": "Correct True flag used in True backtrack mode",
+          "timestamp": "2025-05-29T22:04:40.980879",
+          "event_type": "validation",
+          "details": {
+            "flag": "True",
+            "true_backtrack_mode": true
+          }
+        }
+      ]
+    },
+    "looping_order": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "looping_order",
+          "node_id": "0_0",
+          "result": "PASS",
+          "reason": "State matches expected thought",
+          "timestamp": "2025-05-29T22:04:42.177110",
+          "event_type": "validation",
+          "details": {
+            "state": "3 + 5 = 8 (left: 8 11 11)",
+            "thought": "3 + 5 = 8 (left: 8 11 11)"
+          }
+        },
+        {
+          "check_name": "looping_order",
+          "node_id": "0_1",
+          "result": "PASS",
+          "reason": "State matches expected thought",
+          "timestamp": "2025-05-29T22:04:42.177131",
+          "event_type": "validation",
+          "details": {
+            "state": "5 + 3 = 8 (left: 8 11 11)",
+            "thought": "5 + 3 = 8 (left: 8 11 11)"
+          }
+        },
+        {
+          "check_name": "looping_order",
+          "node_id": "0_2",
+          "result": "PASS",
+          "reason": "State matches expected thought",
+          "timestamp": "2025-05-29T22:04:42.177137",
+          "event_type": "validation",
+          "details": {
+            "state": "11 - 3 = 8 (left: 5 8 11)",
+            "thought": "11 - 3 = 8 (left: 5 8 11)"
+          }
+        },
+        {
+          "check_name": "looping_order",
+          "node_id": "0_2_0",
+          "result": "PASS",
+          "reason": "State matches expected thought",
+          "timestamp": "2025-05-29T22:04:42.177162",
+          "event_type": "validation",
+          "details": {
+            "state": "5 + 8 = 13 (left: 11 13)",
+            "thought": "5 + 8 = 13 (left: 11 13)"
+          }
+        },
+        {
+          "check_name": "looping_order",
+          "node_id": "0_2_0_0",
+          "result": "PASS",
+          "reason": "State matches expected thought",
+          "timestamp": "2025-05-29T22:04:42.177177",
+          "event_type": "validation",
+          "details": {
+            "state": "11 + 13 = 24 (left: 24)",
+            "thought": "11 + 13 = 24 (left: 24)"
+          }
+        },
+        {
+          "check_name": "looping_order",
+          "node_id": "0_2_0_0_0",
+          "result": "PASS",
+          "reason": "State matches expected thought",
+          "timestamp": "2025-05-29T22:04:42.177190",
+          "event_type": "validation",
+          "details": {
+            "state": "Answer: (11 - 3) + 5 + 11 = 24",
+            "thought": "Answer: (11 - 3) + 5 + 11 = 24"
+          }
+        }
+      ]
+    },
+    "final_answer": {
+      "FAIL": 0,
+      "details": [
+        {
+          "check_name": "final_answer",
+          "node_id": "final",
+          "result": "PASS",
+          "reason": "Result 24 matches expected answer 24.0",
+          "timestamp": "2025-05-29T22:04:42.177259",
+          "event_type": "validation",
+          "details": {
+            "result": 24,
+            "expected": 24.0,
+            "difference": 0.0
+          }
+        }
+      ]
+    },
+    "valid_search_trace": {
+      "success_trace": true
+    }
+  },
+  "detailed_results": [
+    {
+      "check_name": "pruning",
+      "node_id": "0_0",
+      "result": "PASS",
+      "reason": "Value 1.002 meets threshold 3.0",
+      "timestamp": "2025-05-29T22:03:34.891106",
+      "event_type": "validation",
+      "details": {
+        "value": 1.002,
+        "threshold": 3.0
+      }
+    },
+    {
+      "check_name": "child_id_assignment",
+      "node_id": "0_0",
+      "result": "PASS",
+      "reason": "node_id 0_0 matches thought position.",
+      "timestamp": "2025-05-29T22:03:34.891162",
+      "event_type": "validation",
+      "details": {
+        "node_id": "0_0",
+        "state": "3 + 5 = 8 (left: 8 11 11)",
+        "thoughts": [
+          "3 + 5 = 8 (left: 8 11 11)",
+          "5 + 3 = 8 (left: 8 11 11)",
+          "11 - 3 = 8 (left: 5 8 11)",
+          "11 - 5 = 6 (left: 3 6 11)",
+          "11 /  3 = 3.67 (left: 3.67 5 11)",
+          "11 /  5 = 2.2 (left: 2.2 3 11)",
+          "5 * 3 = 15 (left: 11 11 15)",
+          "3 * 5 = 15 (left: 11 11 15)",
+          "11 + 3 = 14 (left: 5 11 14)",
+          "11 + 5 = 16 (left: 3 11 16)"
+        ]
+      }
+    },
+    {
+      "check_name": "pruning",
+      "node_id": "0_1",
+      "result": "PASS",
+      "reason": "Value 0.003 meets threshold 3.0",
+      "timestamp": "2025-05-29T22:03:42.896114",
+      "event_type": "validation",
+      "details": {
+        "value": 0.003,
+        "threshold": 3.0
+      }
+    },
+    {
+      "check_name": "child_id_assignment",
+      "node_id": "0_1",
+      "result": "PASS",
+      "reason": "node_id 0_1 matches thought position.",
+      "timestamp": "2025-05-29T22:03:42.896169",
+      "event_type": "validation",
+      "details": {
+        "node_id": "0_1",
+        "state": "5 + 3 = 8 (left: 8 11 11)",
+        "thoughts": [
+          "3 + 5 = 8 (left: 8 11 11)",
+          "5 + 3 = 8 (left: 8 11 11)",
+          "11 - 3 = 8 (left: 5 8 11)",
+          "11 - 5 = 6 (left: 3 6 11)",
+          "11 /  3 = 3.67 (left: 3.67 5 11)",
+          "11 /  5 = 2.2 (left: 2.2 3 11)",
+          "5 * 3 = 15 (left: 11 11 15)",
+          "3 * 5 = 15 (left: 11 11 15)",
+          "11 + 3 = 14 (left: 5 11 14)",
+          "11 + 5 = 16 (left: 3 11 16)"
+        ]
+      }
+    },
+    {
+      "check_name": "pseudo_recursive_call",
+      "node_id": "0_2",
+      "result": "PASS",
+      "reason": "Value 60.0 more than or equal to threshold 3.0",
+      "timestamp": "2025-05-29T22:03:48.374886",
+      "event_type": "validation",
+      "details": {
+        "value": 60.0,
+        "threshold": 3.0
+      }
+    },
+    {
+      "check_name": "child_state",
+      "node_id": "0_2",
+      "result": "PASS",
+      "reason": "State validation passed: Last thought '11 - 3 = 8 (left: 5 8 11)' found in parent's thoughts",
+      "timestamp": "2025-05-29T22:03:48.374947",
+      "event_type": "validation",
+      "details": {
+        "validation_success": [
+          "Last thought '11 - 3 = 8 (left: 5 8 11)' found in parent's thoughts"
+        ],
+        "parent_thoughts": [
+          "3 + 5 = 8 (left: 8 11 11)",
+          "5 + 3 = 8 (left: 8 11 11)",
+          "11 - 3 = 8 (left: 5 8 11)",
+          "11 - 5 = 6 (left: 3 6 11)",
+          "11 /  3 = 3.67 (left: 3.67 5 11)",
+          "11 /  5 = 2.2 (left: 2.2 3 11)",
+          "5 * 3 = 15 (left: 11 11 15)",
+          "3 * 5 = 15 (left: 11 11 15)",
+          "11 + 3 = 14 (left: 5 11 14)",
+          "11 + 5 = 16 (left: 3 11 16)"
+        ],
+        "parent_state": null
+      }
+    },
+    {
+      "check_name": "child_id_assignment",
+      "node_id": "0_2",
+      "result": "PASS",
+      "reason": "node_id 0_2 matches thought position.",
+      "timestamp": "2025-05-29T22:03:48.374988",
+      "event_type": "validation",
+      "details": {
+        "node_id": "0_2",
+        "state": "11 - 3 = 8 (left: 5 8 11)",
+        "thoughts": [
+          "3 + 5 = 8 (left: 8 11 11)",
+          "5 + 3 = 8 (left: 8 11 11)",
+          "11 - 3 = 8 (left: 5 8 11)",
+          "11 - 5 = 6 (left: 3 6 11)",
+          "11 /  3 = 3.67 (left: 3.67 5 11)",
+          "11 /  5 = 2.2 (left: 2.2 3 11)",
+          "5 * 3 = 15 (left: 11 11 15)",
+          "3 * 5 = 15 (left: 11 11 15)",
+          "11 + 3 = 14 (left: 5 11 14)",
+          "11 + 5 = 16 (left: 3 11 16)"
+        ]
+      }
+    },
+    {
+      "check_name": "node_state",
+      "node_id": "0_2",
+      "result": "PASS",
+      "reason": "State consistency check passed",
+      "timestamp": "2025-05-29T22:03:55.333134",
+      "event_type": "validation",
+      "details": {
+        "expected_state": "11 - 3 = 8 (left: 5 8 11)",
+        "actual_state": "11 - 3 = 8 (left: 5 8 11)"
+      }
+    },
+    {
+      "check_name": "pseudo_recursive_call",
+      "node_id": "0_2_0",
+      "result": "PASS",
+      "reason": "Value 60.0 more than or equal to threshold 3.0",
+      "timestamp": "2025-05-29T22:04:02.596406",
+      "event_type": "validation",
+      "details": {
+        "value": 60.0,
+        "threshold": 3.0
+      }
+    },
+    {
+      "check_name": "child_state",
+      "node_id": "0_2_0",
+      "result": "PASS",
+      "reason": "State validation passed: Last thought '5 + 8 = 13 (left: 11 13)' found in parent's thoughts; Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state",
+      "timestamp": "2025-05-29T22:04:02.596452",
+      "event_type": "validation",
+      "details": {
+        "validation_success": [
+          "Last thought '5 + 8 = 13 (left: 11 13)' found in parent's thoughts",
+          "Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state"
+        ],
+        "parent_thoughts": [
+          "5 + 8 = 13 (left: 11 13)",
+          "8 - 5 = 3 (left: 3 11)",
+          "11 - 5 = 6 (left: 6 8)",
+          "11 - 8 = 3 (left: 3 5)",
+          "5 * 8 = 40 (left: 11 40)",
+          "11 + 5 = 16 (left: 8 16)",
+          "8 * 5 = 40 (left: 11 40)",
+          "11 / 5 = 2.2 (left: 2.2 8)",
+          "8 / 5 = 1.6 (left: 1.6 11)"
+        ],
+        "parent_state": [
+          "11 - 3 = 8 (left: 5 8 11)"
+        ]
+      }
+    },
+    {
+      "check_name": "child_id_assignment",
+      "node_id": "0_2_0",
+      "result": "PASS",
+      "reason": "node_id 0_2_0 matches thought position.",
+      "timestamp": "2025-05-29T22:04:02.596495",
+      "event_type": "validation",
+      "details": {
+        "node_id": "0_2_0",
+        "state": "5 + 8 = 13 (left: 11 13)",
+        "thoughts": [
+          "5 + 8 = 13 (left: 11 13)",
+          "8 - 5 = 3 (left: 3 11)",
+          "11 - 5 = 6 (left: 6 8)",
+          "11 - 8 = 3 (left: 3 5)",
+          "5 * 8 = 40 (left: 11 40)",
+          "11 + 5 = 16 (left: 8 16)",
+          "8 * 5 = 40 (left: 11 40)",
+          "11 / 5 = 2.2 (left: 2.2 8)",
+          "8 / 5 = 1.6 (left: 1.6 11)"
+        ]
+      }
+    },
+    {
+      "check_name": "node_state",
+      "node_id": "0_2_0",
+      "result": "PASS",
+      "reason": "State consistency check passed",
+      "timestamp": "2025-05-29T22:04:10.222844",
+      "event_type": "validation",
+      "details": {
+        "expected_state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)",
+        "actual_state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)"
+      }
+    },
+    {
+      "check_name": "pseudo_recursive_call",
+      "node_id": "0_2_0_0",
+      "result": "PASS",
+      "reason": "Value 60.0 more than or equal to threshold 3.0",
+      "timestamp": "2025-05-29T22:04:16.538670",
+      "event_type": "validation",
+      "details": {
+        "value": 60.0,
+        "threshold": 3.0
+      }
+    },
+    {
+      "check_name": "child_state",
+      "node_id": "0_2_0_0",
+      "result": "PASS",
+      "reason": "State validation passed: Last thought '11 + 13 = 24 (left: 24)' found in parent's thoughts; Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state; Previous thought '5 + 8 = 13 (left: 11 13)' found in parent's state",
+      "timestamp": "2025-05-29T22:04:16.538719",
+      "event_type": "validation",
+      "details": {
+        "validation_success": [
+          "Last thought '11 + 13 = 24 (left: 24)' found in parent's thoughts",
+          "Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state",
+          "Previous thought '5 + 8 = 13 (left: 11 13)' found in parent's state"
+        ],
+        "parent_thoughts": [
+          "11 + 13 = 24 (left: 24)",
+          "13 - 11 = 2 (left: 2)",
+          "11 * 13 = 143 (left: 143)",
+          "13 / 11 = 1.18 (left: 1.18)"
+        ],
+        "parent_state": [
+          "11 - 3 = 8 (left: 5 8 11)",
+          "5 + 8 = 13 (left: 11 13)"
+        ]
+      }
+    },
+    {
+      "check_name": "child_id_assignment",
+      "node_id": "0_2_0_0",
+      "result": "PASS",
+      "reason": "node_id 0_2_0_0 matches thought position.",
+      "timestamp": "2025-05-29T22:04:16.538752",
+      "event_type": "validation",
+      "details": {
+        "node_id": "0_2_0_0",
+        "state": "11 + 13 = 24 (left: 24)",
+        "thoughts": [
+          "11 + 13 = 24 (left: 24)",
+          "13 - 11 = 2 (left: 2)",
+          "11 * 13 = 143 (left: 143)",
+          "13 / 11 = 1.18 (left: 1.18)"
+        ]
+      }
+    },
+    {
+      "check_name": "node_state",
+      "node_id": "0_2_0_0",
+      "result": "PASS",
+      "reason": "State consistency check passed",
+      "timestamp": "2025-05-29T22:04:24.068918",
+      "event_type": "validation",
+      "details": {
+        "expected_state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)\n11 + 13 = 24 (left: 24)",
+        "actual_state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)\n11 + 13 = 24 (left: 24)"
+      }
+    },
+    {
+      "check_name": "child_id_assignment",
+      "node_id": "0_2_0_0_0",
+      "result": "PASS",
+      "reason": "node_id 0_2_0_0_0 matches thought position.",
+      "timestamp": "2025-05-29T22:04:30.898212",
+      "event_type": "validation",
+      "details": {
+        "node_id": "0_2_0_0_0",
+        "state": "Answer: (11 - 3) + 5 + 11 = 24",
+        "thoughts": [
+          "Answer: (11 - 3) + 5 + 11 = 24"
+        ]
+      }
+    },
+    {
+      "check_name": "backtracking_I",
+      "node_id": "0_2_0_0",
+      "result": "PASS",
+      "reason": "Complete backtracking validation passed: Correctly popped expected node 0_2_0_0; Correctly backtracking to parent '0_2_0'",
+      "timestamp": "2025-05-29T22:04:34.663838",
+      "event_type": "validation",
+      "details": {
+        "popped_node": "0_2_0_0",
+        "expected_popped": "0_2_0_0",
+        "backtrack_to": "0_2_0",
+        "expected_parent": "0_2_0",
+        "validation_details": [
+          "Correctly popped expected node 0_2_0_0",
+          "Correctly backtracking to parent '0_2_0'"
+        ]
+      }
+    },
+    {
+      "check_name": "base_case",
+      "node_id": "0_2_0_0",
+      "result": "PASS",
+      "reason": "Level limit 3 exceeded - valid backtrack",
+      "timestamp": "2025-05-29T22:04:34.663863",
+      "event_type": "validation",
+      "details": {
+        "stack_size": 3,
+        "level_limit": 3
+      }
+    },
+    {
+      "check_name": "backtracking_II",
+      "node_id": "0_2_0_0",
+      "result": "PASS",
+      "reason": "Correct True flag used in True backtrack mode",
+      "timestamp": "2025-05-29T22:04:34.663869",
+      "event_type": "validation",
+      "details": {
+        "flag": "True",
+        "true_backtrack_mode": true
+      }
+    },
+    {
+      "check_name": "backtracking_I",
+      "node_id": "0_2_0",
+      "result": "PASS",
+      "reason": "Complete backtracking validation passed: Correctly popped expected node 0_2_0; Correctly backtracking to parent '0_2'",
+      "timestamp": "2025-05-29T22:04:36.890573",
+      "event_type": "validation",
+      "details": {
+        "popped_node": "0_2_0",
+        "expected_popped": "0_2_0",
+        "backtrack_to": "0_2",
+        "expected_parent": "0_2",
+        "validation_details": [
+          "Correctly popped expected node 0_2_0",
+          "Correctly backtracking to parent '0_2'"
+        ]
+      }
+    },
+    {
+      "check_name": "backtracking_II",
+      "node_id": "0_2_0",
+      "result": "PASS",
+      "reason": "Correct True flag used in True backtrack mode",
+      "timestamp": "2025-05-29T22:04:36.890594",
+      "event_type": "validation",
+      "details": {
+        "flag": "True",
+        "true_backtrack_mode": true
+      }
+    },
+    {
+      "check_name": "backtracking_I",
+      "node_id": "0_2",
+      "result": "PASS",
+      "reason": "Complete backtracking validation passed: Correctly popped expected node 0_2; Correctly backtracking to parent '0'",
+      "timestamp": "2025-05-29T22:04:39.060910",
+      "event_type": "validation",
+      "details": {
+        "popped_node": "0_2",
+        "expected_popped": "0_2",
+        "backtrack_to": "0",
+        "expected_parent": "0",
+        "validation_details": [
+          "Correctly popped expected node 0_2",
+          "Correctly backtracking to parent '0'"
+        ]
+      }
+    },
+    {
+      "check_name": "backtracking_II",
+      "node_id": "0_2",
+      "result": "PASS",
+      "reason": "Correct True flag used in True backtrack mode",
+      "timestamp": "2025-05-29T22:04:39.061005",
+      "event_type": "validation",
+      "details": {
+        "flag": "True",
+        "true_backtrack_mode": true
+      }
+    },
+    {
+      "check_name": "backtracking_I",
+      "node_id": "0",
+      "result": "PASS",
+      "reason": "Complete backtracking validation passed: Correctly popped expected node 0; Correctly backtracking to parent 'None'",
+      "timestamp": "2025-05-29T22:04:40.980860",
+      "event_type": "validation",
+      "details": {
+        "popped_node": "0",
+        "expected_popped": "0",
+        "backtrack_to": "None",
+        "expected_parent": "None",
+        "validation_details": [
+          "Correctly popped expected node 0",
+          "Correctly backtracking to parent 'None'"
+        ]
+      }
+    },
+    {
+      "check_name": "backtracking_II",
+      "node_id": "0",
+      "result": "PASS",
+      "reason": "Correct True flag used in True backtrack mode",
+      "timestamp": "2025-05-29T22:04:40.980879",
+      "event_type": "validation",
+      "details": {
+        "flag": "True",
+        "true_backtrack_mode": true
+      }
+    },
+    {
+      "check_name": "looping_order",
+      "node_id": "0_0",
+      "result": "PASS",
+      "reason": "State matches expected thought",
+      "timestamp": "2025-05-29T22:04:42.177110",
+      "event_type": "validation",
+      "details": {
+        "state": "3 + 5 = 8 (left: 8 11 11)",
+        "thought": "3 + 5 = 8 (left: 8 11 11)"
+      }
+    },
+    {
+      "check_name": "looping_order",
+      "node_id": "0_1",
+      "result": "PASS",
+      "reason": "State matches expected thought",
+      "timestamp": "2025-05-29T22:04:42.177131",
+      "event_type": "validation",
+      "details": {
+        "state": "5 + 3 = 8 (left: 8 11 11)",
+        "thought": "5 + 3 = 8 (left: 8 11 11)"
+      }
+    },
+    {
+      "check_name": "looping_order",
+      "node_id": "0_2",
+      "result": "PASS",
+      "reason": "State matches expected thought",
+      "timestamp": "2025-05-29T22:04:42.177137",
+      "event_type": "validation",
+      "details": {
+        "state": "11 - 3 = 8 (left: 5 8 11)",
+        "thought": "11 - 3 = 8 (left: 5 8 11)"
+      }
+    },
+    {
+      "check_name": "looping_order",
+      "node_id": "0_2_0",
+      "result": "PASS",
+      "reason": "State matches expected thought",
+      "timestamp": "2025-05-29T22:04:42.177162",
+      "event_type": "validation",
+      "details": {
+        "state": "5 + 8 = 13 (left: 11 13)",
+        "thought": "5 + 8 = 13 (left: 11 13)"
+      }
+    },
+    {
+      "check_name": "looping_order",
+      "node_id": "0_2_0_0",
+      "result": "PASS",
+      "reason": "State matches expected thought",
+      "timestamp": "2025-05-29T22:04:42.177177",
+      "event_type": "validation",
+      "details": {
+        "state": "11 + 13 = 24 (left: 24)",
+        "thought": "11 + 13 = 24 (left: 24)"
+      }
+    },
+    {
+      "check_name": "looping_order",
+      "node_id": "0_2_0_0_0",
+      "result": "PASS",
+      "reason": "State matches expected thought",
+      "timestamp": "2025-05-29T22:04:42.177190",
+      "event_type": "validation",
+      "details": {
+        "state": "Answer: (11 - 3) + 5 + 11 = 24",
+        "thought": "Answer: (11 - 3) + 5 + 11 = 24"
+      }
+    },
+    {
+      "check_name": "final_answer",
+      "node_id": "final",
+      "result": "PASS",
+      "reason": "Result 24 matches expected answer 24.0",
+      "timestamp": "2025-05-29T22:04:42.177259",
+      "event_type": "validation",
+      "details": {
+        "result": 24,
+        "expected": 24.0,
+        "difference": 0.0
+      }
+    }
+  ],
+  "legacy_log": [
+    {
+      "event": "push",
+      "node_id": "0",
+      "issues": [],
+      "log": []
+    },
+    {
+      "event": "push",
+      "node_id": "0_0",
+      "issues": [],
+      "log": [
+        "\u2705 Node 0_0 with value 1.002 less than 3.0 pruned successfully.",
+        "\u2705 Node 0_0 matches thought position."
+      ]
+    },
+    {
+      "event": "push",
+      "node_id": "0_1",
+      "issues": [],
+      "log": [
+        "\u2705 Node 0_1 with value 0.003 less than 3.0 pruned successfully.",
+        "\u2705 Node 0_1 matches thought position."
+      ]
+    },
+    {
+      "event": "push",
+      "node_id": "0_2",
+      "issues": [],
+      "log": [
+        "\u2705 Recursive call happened correctly: node 0_2 with value 60.0 more than or equal to 3.0 should be traversed.",
+        "\u2705 State validation passed: Last thought '11 - 3 = 8 (left: 5 8 11)' found in parent's thoughts",
+        "\u2705 Node 0_2 matches thought position.",
+        "\u2705 State consistency check passed for node 0_2"
+      ]
+    },
+    {
+      "event": "push",
+      "node_id": "0_2_0",
+      "issues": [],
+      "log": [
+        "\u2705 Recursive call happened correctly: node 0_2_0 with value 60.0 more than or equal to 3.0 should be traversed.",
+        "\u2705 State validation passed: Last thought '5 + 8 = 13 (left: 11 13)' found in parent's thoughts; Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state",
+        "\u2705 Node 0_2_0 matches thought position.",
+        "\u2705 State consistency check passed for node 0_2_0"
+      ]
+    },
+    {
+      "event": "push",
+      "node_id": "0_2_0_0",
+      "issues": [],
+      "log": [
+        "\u2705 Recursive call happened correctly: node 0_2_0_0 with value 60.0 more than or equal to 3.0 should be traversed.",
+        "\u2705 State validation passed: Last thought '11 + 13 = 24 (left: 24)' found in parent's thoughts; Previous thought '11 - 3 = 8 (left: 5 8 11)' found in parent's state; Previous thought '5 + 8 = 13 (left: 11 13)' found in parent's state",
+        "\u2705 Node 0_2_0_0 matches thought position.",
+        "\u2705 State consistency check passed for node 0_2_0_0"
+      ]
+    },
+    {
+      "event": "push",
+      "node_id": "0_2_0_0_0",
+      "issues": [],
+      "log": [
+        "\u2705 Node 0_2_0_0_0 matches thought position."
+      ]
+    },
+    {
+      "event": "pop",
+      "node_id": "",
+      "issues": [],
+      "log": [
+        "\u2705 Popped 0_2_0_0 successfully.",
+        "\u2705 Backtrack parent validation passed: correctly backtracking to '0_2_0'.",
+        "\u2705 Complete backtracking validation passed: Correctly popped expected node 0_2_0_0; Correctly backtracking to parent '0_2_0'",
+        "\u2705 Level limit exceeded \u2014 valid reason for backtracking.",
+        "\u2705 Subsequent backtrack validation: correctly using True flag in Subsequent mode for 0_2_0_0.",
+        "\u2705 Popped 0_2_0 successfully.",
+        "\u2705 Backtrack parent validation passed: correctly backtracking to '0_2'.",
+        "\u2705 Complete backtracking validation passed: Correctly popped expected node 0_2_0; Correctly backtracking to parent '0_2'",
+        "\u2705 Subsequent backtrack validation: correctly using True flag in Subsequent mode for 0_2_0.",
+        "\u2705 Popped 0_2 successfully.",
+        "\u2705 Backtrack parent validation passed: correctly backtracking to '0'.",
+        "\u2705 Complete backtracking validation passed: Correctly popped expected node 0_2; Correctly backtracking to parent '0'",
+        "\u2705 Subsequent backtrack validation: correctly using True flag in Subsequent mode for 0_2.",
+        "\u2705 Popped 0 successfully.",
+        "\u2705 Backtrack parent validation passed: correctly backtracking to 'None'.",
+        "\u2705 Complete backtracking validation passed: Correctly popped expected node 0; Correctly backtracking to parent 'None'",
+        "\u2705 Subsequent backtrack validation: correctly using True flag in Subsequent mode for 0."
+      ]
+    }
+  ],
+  "tree_trace": {
+    "0": {
+      "state": null,
+      "thought": "3 + 5 = 8 (left: 8 11 11)\n5 + 3 = 8 (left: 8 11 11)\n11 - 3 = 8 (left: 5 8 11)\n11 - 5 = 6 (left: 3 6 11)\n11 /  3 = 3.67 (left: 3.67 5 11)\n11 /  5 = 2.2 (left: 2.2 3 11)\n5 * 3 = 15 (left: 11 11 15)\n3 * 5 = 15 (left: 11 11 15)\n11 + 3 = 14 (left: 5 11 14)\n11 + 5 = 16 (left: 3 11 16)",
+      "value": null,
+      "opening_remark": null,
+      "children": {
+        "0_0": {
+          "state": "3 + 5 = 8 (left: 8 11 11)",
+          "thought": null,
+          "value": 1.002,
+          "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+          "children": {},
+          "closing_remark": null,
+          "backtracked": false
+        },
+        "0_1": {
+          "state": "5 + 3 = 8 (left: 8 11 11)",
+          "thought": null,
+          "value": 0.003,
+          "opening_remark": "Value does not exceed heuristic threshold, childs will not be traversed.",
+          "children": {},
+          "closing_remark": null,
+          "backtracked": false
+        },
+        "0_2": {
+          "state": "11 - 3 = 8 (left: 5 8 11)",
+          "thought": "5 + 8 = 13 (left: 11 13)\n8 - 5 = 3 (left: 3 11)\n11 - 5 = 6 (left: 6 8)\n11 - 8 = 3 (left: 3 5)\n5 * 8 = 40 (left: 11 40)\n11 + 5 = 16 (left: 8 16)\n8 * 5 = 40 (left: 11 40)\n11 / 5 = 2.2 (left: 2.2 8)\n8 / 5 = 1.6 (left: 1.6 11)",
+          "value": 60.0,
+          "opening_remark": "Value exceeds heuristic threshold, childs will be traversed.",
+          "children": {
+            "0_2_0": {
+              "state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)",
+              "thought": "11 + 13 = 24 (left: 24)\n13 - 11 = 2 (left: 2)\n11 * 13 = 143 (left: 143)\n13 / 11 = 1.18 (left: 1.18)",
+              "value": 60.0,
+              "opening_remark": "Value exceeds heuristic threshold, childs will be traversed.",
+              "children": {
+                "0_2_0_0": {
+                  "state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)\n11 + 13 = 24 (left: 24)",
+                  "thought": "Answer: (11 - 3) + 5 + 11 = 24",
+                  "value": 60.0,
+                  "opening_remark": "Value exceeds heuristic threshold, childs will be traversed.",
+                  "children": {
+                    "0_2_0_0_0": {
+                      "state": "11 - 3 = 8 (left: 5 8 11)\n5 + 8 = 13 (left: 11 13)\n11 + 13 = 24 (left: 24)\nAnswer: (11 - 3) + 5 + 11 = 24",
+                      "thought": null,
+                      "value": 60.0,
+                      "opening_remark": "Value exceeds heuristic threshold, childs will be traversed.",
+                      "children": {},
+                      "closing_remark": null,
+                      "backtracked": false
+                    }
+                  },
+                  "closing_remark": null,
+                  "backtracked": true,
+                  "backtracked_to": "0_2_0"
+                }
+              },
+              "closing_remark": null,
+              "backtracked": true,
+              "backtracked_to": "0_2"
+            }
+          },
+          "closing_remark": null,
+          "backtracked": true,
+          "backtracked_to": "0"
+        }
+      },
+      "closing_remark": null,
+      "backtracked": false
+    }
+  }
+}
