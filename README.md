@@ -1,19 +1,17 @@
-# Few-Shot Search: In-Context Learning for Tree and Graph Search
+# few-shot-search
+Official code base for the paper titled **"Few-Shot Search: In-Context Learning for Tree and Graph Search."**
 
-Brief one-line description of your research project.
+This repository contains code for:
+- Performing few-shot search using DFS and A* on two domains: Game of 24 and Maze Navigation.
+- Generating and accessing datasets and model outputs.
+- Reproducing evaluation results from the main paper.
+- Running the experiments and few-shot examples used in the study.
 
-## Abstract
-
-Provide a concise summary of your research problem, methodology, and key findings. This should be 2-3 paragraphs that give readers a quick understanding of what your project accomplishes.
-
-### Prerequisites
-- Python 3.10
-
-### Setup
-```bash
+## Setup
+```
 # Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/sambitmukherjee/few-shot-search.git
+cd few-shot-search
 
 # Create virtual environment
 python -m venv venv
@@ -23,129 +21,68 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### Basic Usage
-```bash
-python main.py --input data/sample.csv --output results/
-```
-
-### Advanced Options
-```bash
-python main.py --help
-```
-
-Provide examples of different use cases and expected outputs.
-
 ## Repository Structure
-
 ```
-├── data/                   # Data files and datasets
-├── src/                    # Source code
-│   ├── models/            # Model implementations
-│   ├── utils/             # Utility functions
-│   └── experiments/       # Experimental scripts
-├── results/               # Output results and figures
-├── docs/                  # Documentation
-├── tests/                 # Unit tests
-├── requirements.txt       # Python dependencies
-├── config.yaml           # Configuration files
-└── README.md             # This file
+few-shot-search/
+├── demos/                                # Interactive demo notebooks
+│   ├── few_shot_search_game_of_24_dfs.ipynb
+│   └── few_shot_search_maze_navigation_a_star.ipynb
+│
+├── eval/                                 # Evaluation results and datasets
+│   ├── eval_notebooks/                   # Placeholder for domain-wise eval notebooks
+│   │   ├── game_of_24/
+│   │   └── maze_navigation/
+│   │
+│   ├── game_of_24/
+│   │   ├── gpt-4o/
+│   │   │   ├── eval/
+│   │   │   │   └── eval_set_24.csv
+│   │   │   ├── game_24_gpt-4o_gamewise_failure_count.csv
+│   │   │   ├── game_24_gpt-4o_gamewise_final_answer.csv
+│   │   │   ├── game_24_gpt-4o_gamewise_interleaved_table.csv
+│   │   │   ├── game_24_gpt-4o_gamewise_total_count.csv
+│   │   │   └── game_24_puzzle_results.csv
+│   │   │
+│   │   └── gpt-4o-mini/
+│   │       ├── eval/
+│   │       │   └── eval_set_24.csv
+│   │       ├── game_24_gpt-4o-mini_gamewise_failure_count.csv
+│   │       ├── game_24_gpt-4o-mini_gamewise_final_answer.csv
+│   │       ├── game_24_gpt-4o-mini_gamewise_interleaved_table.csv
+│   │       └── game_24_gpt-4o-mini_gamewise_total_count.csv
+│   │
+│   └── maze_navigation/
+│       ├── attributes_gpt_4o.csv
+│       ├── attributes_gpt_4o_mini.csv
+│       ├── solve_rate_gpt_4o.csv
+│       └── solve_rate_gpt_4o_mini.csv
+│
+├── few_shot_examples/                    # Core few-shot prompt templates
+│   ├── game_of_24_dfs_4_shot_examples.py
+│   └── maze_navigation_a_star_2_shot_examples.py
+│
+├── logs/                                 # Run logs from experiments
+│   ├── game_of_24_dfs/
+│   └── maze_navigation_a_star/
+│
+├── LICENSE
+└── README.md
 ```
+## How To Run
+### Run Demos
+Game of 24 (DFS Search)\
+```demos/few_shot_search_game_of_24_dfs.ipynb```
 
-## Methodology
+Maze Navigation (A* Search)\
+```demos/few_shot_search_maze_navigation_a_star.ipynb```
 
-Describe your research approach, algorithms used, or experimental design. Include:
-- Problem formulation
-- Key algorithms or techniques
-- Experimental setup
-- Evaluation metrics
 
-## Data
+### Run Evaluation
+Game of 24 (DFS Search)\
+```eval/eval_notebooks/game_of_24/ICL_DFS_Game_of_24_eval_data_preparation_github_uploaded.ipynb```\
+```eval/eval_notebooks/game_of_24/ICL_DFS_Game_of_24_Evaluation_Framework_github_uploaded.ipynb```
 
-### Datasets Used
-- **Dataset Name**: Brief description, source, and any preprocessing steps
-- **Dataset Name**: Brief description, source, and any preprocessing steps
+Maze Navigation (A* Search)\
+```eval/eval_notebooks/maze_navigation/gpt-4o-trace-generation.ipynb```\
+```eval/eval_notebooks/maze_navigation/A_star_ Complete_Eval.py```
 
-### Data Format
-Describe the expected input format and any data preparation steps.
-
-### Obtaining Data
-Instructions on how to download or access the datasets used in your research.
-
-## Results
-
-### Key Findings
-Summarize your main research findings and contributions.
-
-### Performance Metrics
-Include tables or figures showing your results:
-
-| Method | Accuracy | Precision | Recall |
-|--------|----------|-----------|---------|
-| Baseline | 0.85 | 0.82 | 0.88 |
-| Our Method | 0.92 | 0.89 | 0.94 |
-
-### Visualizations
-Include links to key figures or visualizations that demonstrate your results.
-
-## Reproducibility
-
-### Environment
-- Python version
-- Key library versions
-- Hardware requirements (if applicable)
-
-### Running Experiments
-```bash
-# Run complete experiment pipeline
-python experiments/run_all.py
-
-# Run specific experiment
-python experiments/experiment_name.py --config config/experiment.yaml
-```
-
-### Random Seeds
-Specify any random seeds used for reproducible results.
-
-## Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@article{yourname2024,
-  title={Your Paper Title},
-  author={Your Name and Co-authors},
-  journal={Journal Name},
-  year={2024},
-  publisher={Publisher}
-}
-```
-
-## Contributing
-
-We welcome contributions! Please see our [contributing guidelines](CONTRIBUTING.md) for details on:
-- How to submit issues
-- How to submit pull requests
-- Code style guidelines
-- Testing requirements
-
-## License
-
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Funding sources
-- Collaborators and advisors
-- Datasets and tools used
-- Inspiration or related work
-
-## Contact
-
-- **Author**: Your Name
-- **Email**: your.email@institution.edu
-- **Institution**: Your University/Organization
-- **Lab/Group**: Research Group Name
-
-For questions about this research or potential collaborations, please reach out via email or open an issue in this repository.
